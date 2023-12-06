@@ -14,6 +14,7 @@
 		C00B3F702B1F42C6004323F2 /* BasicStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00B3F6F2B1F42C6004323F2 /* BasicStudyTests.swift */; };
 		C00B3F7A2B1F42C6004323F2 /* BasicStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00B3F792B1F42C6004323F2 /* BasicStudyUITests.swift */; };
 		C00B3F7C2B1F42C6004323F2 /* BasicStudyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00B3F7B2B1F42C6004323F2 /* BasicStudyUITestsLaunchTests.swift */; };
+		C03116662B209017006628F1 /* Elevator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03116652B209017006628F1 /* Elevator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		C00B3F752B1F42C6004323F2 /* BasicStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasicStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00B3F792B1F42C6004323F2 /* BasicStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicStudyUITests.swift; sourceTree = "<group>"; };
 		C00B3F7B2B1F42C6004323F2 /* BasicStudyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicStudyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C03116652B209017006628F1 /* Elevator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elevator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				C00B3F612B1F42C6004323F2 /* Assets.xcassets */,
 				C00B3F662B1F42C6004323F2 /* BasicStudy.entitlements */,
 				C00B3F632B1F42C6004323F2 /* Preview Content */,
+				C03116652B209017006628F1 /* Elevator.swift */,
 			);
 			path = BasicStudy;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				C00B3F602B1F42C4004323F2 /* ContentView.swift in Sources */,
 				C00B3F5E2B1F42C4004323F2 /* BasicStudyApp.swift in Sources */,
+				C03116662B209017006628F1 /* Elevator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,8 +441,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kgc.BasicStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -464,8 +471,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kgc.BasicStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

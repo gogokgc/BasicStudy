@@ -8,8 +8,39 @@
 import SwiftUI
 
 struct Elevator: View {
+    
+    @State var elevatorStruct = ElevatorStruct()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(content: {
+            Text("\(elevatorStruct.level) Floor")
+            
+            HStack(content: {
+                Button(action: {
+                    elevatorStruct.goDown()
+                }, label: {
+                    Text("lower Floor")
+                })
+                
+                Button(action: {
+                    elevatorStruct.goUp()
+                }, label: {
+                    Text("Upper Floor")
+                })
+            })
+        })
+    }
+}
+
+struct ElevatorStruct {
+    var level: Int = 2
+    
+    mutating func goDown() {
+       level = level - 1
+    }
+    
+    mutating func goUp() {
+        level = level + 1
     }
 }
 
