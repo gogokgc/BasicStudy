@@ -1,0 +1,18 @@
+//
+//  Exception.swift
+//  BasicStudy
+//
+//  Created by KYUCHEOL KIM on 12/8/23.
+//
+
+import SwiftUI
+
+struct Exception: View {
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    }
+}
+
+#Preview {
+    Exception()
+}
